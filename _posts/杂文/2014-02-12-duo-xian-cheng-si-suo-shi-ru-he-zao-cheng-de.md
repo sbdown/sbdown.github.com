@@ -2,7 +2,7 @@
 layout: post
 title: "多线程死锁是如何造成的"
 description: "了解导致多线程死锁的原因，以及造成死锁的一些条件。"
-category: 编程
+category: 杂文
 tags: [线程死锁, 多线程]
 ---
 {% include JB/setup %}
