@@ -1,46 +1,75 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: ÈýÒ¯
+tagline: ÎÒ×Ô¿ñ¸èÏòÌìÐ¦£¬·ÉÑï°ÏìèË­ÎªÐÛ¡£
 ---
-{% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+<div>
+{% for post in paginator.posts %}
+        <article class="home">
+            <span class="post-date">
+                {% assign d = post.date | date: "%d" | plus:'0' %}
+                {{ post.date | date: "%B" }}
+                {% case d %}
+                  {% when 1 or 21 or 31 %}{{ d }}st,
+                  {% when 2 or 22 %}{{ d }}nd,
+                  {% when 3 or 23 %}{{ d }}rd,
+                  {% else %}{{ d }}th,
+                {% endcase %}
+                {{ post.date | date: "%Y" }}
+            </span>
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+            <h2>
+                <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+            </h2>
 
-## Update Author Attributes
+            <div>
+                {% if post.fullview %}
+                  {{ post.content }}
+                {% else %}
+                    {% if post.shortinfo %}
+                        {{ post.shortinfo }}
+                    {% elsif post.description %}
+                        {{ post.description }}
+                    {% else %}
+                        {{ post.excerpt }}
+                    {% endif %}
+                {% endif %}
+            </div>
 
-In `_config.yml` remember to specify your own data:
-    
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
+        </article>
+{% endfor %}
+</div>
+<hr/>
 
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
+<ul class="pager"> 
 
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
+  {% if paginator.previous_page %}
+    <li class="previous">
+      {% if paginator.previous_page == 1 %}
+        <a href="{{ site.BASE_PATH }}/">&larr; Newer</a>
+      {% else %}
+        <a href="{{ site.BASE_PATH }}/page{{ paginator.previous_page }}">&larr; Newer</a>
+      {% endif %}
+    </li>
+  {% else %}
+    <li class="previous disabled">
+      <a>&larr; Newer</a>
+    </li>
+  {% endif %}
+  
+  <li>
+          <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  </li>
 
-    $ rm -rf _posts/core-samples
+  {% if paginator.next_page %}
+    <li class="next">
+            <a href="{{ site.BASE_PATH }}/page{{ paginator.next_page }}">Older &rarr;</a>
+    </li>
+  {% else %}
+    <li class="next disabled">
+            <a>Older &rarr;</a>        
+    </li>
+  {% endif %}
 
-Here's a sample "posts list".
-
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
 </ul>
-
-## To-Do
-
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
-
-
