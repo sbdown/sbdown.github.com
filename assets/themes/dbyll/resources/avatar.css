@@ -20,6 +20,27 @@ animation: spin .35s linear infinite; }
 -moz-background-size: 100px 100px;
 background-size: 100px 100px; } }
 
+#smallavatar {
+width: 35px;
+height: 35px;
+margin: 55px auto 35px;
+background: url(http://www.gravatar.com/avatar/f32eb32b8345ff76534ccaa43c709c64?s=35);
+border-radius: 50%;
+box-shadow: 0 0 0px 4px white, 0 0 4px 4px #eee;
+overflow: hidden;
+display: block; }
+#smallavatar:hover {
+-webkit-animation: spin .35s linear infinite;
+-moz-animation: spin .35s linear infinite;
+-ms-animation: spin .35s linear infinite;
+-o-animation: spin .35s linear infinite;
+animation: spin .35s linear infinite; }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+#smallavatar {
+
+-webkit-background-size: 100px 100px;
+-moz-background-size: 100px 100px;
+background-size: 100px 100px; } }
 
 @-webkit-keyframes fadeIn {
 from {
