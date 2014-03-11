@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 三爷
-tagline: 我自狂歌向天笑，飞扬跋扈谁为雄。
+title: 
+tagline: 
 ---
 
 <div>
