@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 山哥
-tagline: 天下风去出我辈，一入江湖岁月摧 
+title: 
+tagline: 
 ---
 
 <div>
