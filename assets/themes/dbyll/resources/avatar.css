@@ -27,7 +27,6 @@
 #smallavatar {
     width: 35px;
     height: 35px;
-    margin: 55px auto 35px;
     border-radius: 50%;
     box-shadow: 0 0 0px 4px white, 0 0 4px 4px #eee;
     overflow: hidden;
@@ -284,8 +283,8 @@
 .logo {
     width: 200px;
     position: absolute;
-    left: 3em;
-    top: 3em;
+    left: 8em;
+    top: 2em;
     z-index: 100;
 }
 
@@ -311,10 +310,7 @@ h1, h2, h3, h4, ul, li, p, a {
 }
 
 .logo-bg {
-    width: 380px;
-    height: 220px;
     position: absolute;
-    top: 0px;
-    left: -70px;
+    top: -25px;
     z-index: 1;
 }
