@@ -1,8 +1,8 @@
 #avatar {
-width: 236px;
-height: 236px;
+width: 150px;
+height: 150px;
 margin: 55px auto 35px;
-background: url(http://www.gravatar.com/avatar/f32eb32b8345ff76534ccaa43c709c64?s=236);
+background: url(http://www.gravatar.com/avatar/f32eb32b8345ff76534ccaa43c709c64?s=150);
 border-radius: 50%;
 box-shadow: 0 0 0px 4px white, 0 0 4px 4px #eee;
 overflow: hidden;
