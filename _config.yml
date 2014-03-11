@@ -11,17 +11,17 @@ pygments: true
 paginate: 10 #pagination based on number of posts
 paginate_path: "page:num"
 
-title : 山哥
-tagline: 天下风去出我辈，一入江湖岁月摧 
+title : 灞卞摜
+tagline: 澶╀笅椋庡幓鍑烘垜杈堬紝涓�鍏ユ睙婀栧瞾鏈堟懅
 author :
-  name : 山哥
+  name : 灞卞摜
   email : 934331515@qq.com
   github : sbdown
   twitter : sbdown
   pinterest: sbdown
   linkedin: sbdown
   resume: sbdown
-  bio: 从天堂到地狱，我路过人间
+  bio: 浠庡ぉ鍫傚埌鍦扮嫳锛屾垜璺繃浜洪棿 
   email_md5: f32eb32b8345ff76534ccaa43c709c64
 
 # The production_url is only used when full-domain names are needed
