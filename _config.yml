@@ -8,14 +8,21 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Jekyll Bootstrap
-tagline: Site Tagline
+paginate: 10 #pagination based on number of posts
+paginate_path: "page:num"
+
+title : 山哥
+tagline: 天下风去出我辈，一入江湖岁月摧 
 author :
-  name : Name Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
-  feedburner : feedname
+  name : 山哥
+  email : 934331515@qq.com
+  github : sbdown
+  twitter : sbdown
+  pinterest: sbdown
+  linkedin: sbdown
+  resume: sbdown
+  bio: 从天堂到地狱，我路过人间
+  email_md5: f32eb32b8345ff76534ccaa43c709c64
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -25,7 +32,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://username.github.io
+production_url : http://www.itfucking.com
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -82,13 +89,13 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
+      short_name : sanye
     livefyre :
-      site_id : 123
+      site_id : 
     intensedebate :
-      account : 123abc
+      account : 
     facebook :
-      appid : 123
+      appid : 
       num_posts: 5
       width: 580
       colorscheme: light
@@ -100,7 +107,7 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-123-12'
+        tracking_id : 'UA-***'
     getclicky :
       site_id : 
     mixpanel :
