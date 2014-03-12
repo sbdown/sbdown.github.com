@@ -6,7 +6,6 @@ category: 心悸
 tags: 内心独白
 ---
 {% include JB/setup %}
-
 <div class="in-center" style="width:200px">
 	<h1>内心独白</h1>
 	<p>我不知道这么做的目的是什么	甚至累得出现了昏厥现象。。但总算是搭建好了一个属于自己的小博客，以后可以在这里吐槽了。。。</p>
