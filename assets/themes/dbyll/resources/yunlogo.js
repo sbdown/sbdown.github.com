@@ -39,8 +39,8 @@ $(document).ready(function () {
         containerID: "logo-bg",
         logoCanvasID: "yugen-logo-canvas",
         colors: [
-            [new YugenLogo.util.Color(240, 240, 240), new YugenLogo.util.Color(0, 0, 0)],
-            [new YugenLogo.util.Color(0, 0, 0), new YugenLogo.util.Color(240, 240, 240)]
+            [new YugenLogo.util.Color(240, 255, 255), new YugenLogo.util.Color(51, 161, 201)],
+            [new YugenLogo.util.Color(51, 161, 201), new YugenLogo.util.Color(240, 255, 255)]
         ],
         inputs: [
             YugenLogo.input.move,
