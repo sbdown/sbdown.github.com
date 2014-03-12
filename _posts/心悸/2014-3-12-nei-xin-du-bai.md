@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "心悸"
+title: "内心独白"
 description: "灵魂的归宿"
 category: 心悸
 tags: 内心独白
