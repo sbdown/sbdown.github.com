@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "内心独白"
-description: "灵魂的归宿"
+description: "人生的阅历比你读一万本书都重要，别说苦，也别说累，等你真苦，真累的时候，你真的什么都不会说了，所以，你是幸福的。。。"
 category: 心悸
 tags: 内心独白
 ---
